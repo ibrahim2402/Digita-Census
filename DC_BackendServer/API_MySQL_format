@@ -1,0 +1,44 @@
+CREATE TABLE census_table1 (
+id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+firstName VARCHAR(45) NOT NULL,
+middleName VARCHAR(45) NOT NULL,
+lastName VARCHAR(45) NOT NULL,
+gender VARCHAR(10) NOT NULL,
+dateOfBirth VARCHAR(25) NOT NULL,
+ssn INT(10) UNSIGNED NOT NULL,
+maritalStatus VARCHAR(10) NOT NULL,
+numberOfChildren INT(11) NOT NULL,
+placeOfBirth VARCHAR(45) NOT NULL,
+religion VARCHAR(15) NOT NULL,
+stateOfOrigin VARCHAR(15) NOT NULL,
+address VARCHAR(45) NOT NULL,
+address_city VARCHAR(45) NOT NULL,
+address_state VARCHAR(45) NOT NULL,
+address_postCode VARCHAR(10) NULL,
+address_country VARCHAR(15) NOT NULL,
+employment_status VARCHAR(25) NOT NULL,
+employment_profession VARCHAR(45) NOT NULL,
+nextOfKin_name VARCHAR(45) NOT NULL,
+nextOfKin_address VARCHAR(45) NOT NULL,
+nextOfKin_city VARCHAR(45) NOT NULL,
+nextOfKin_state VARCHAR(45) NOT NULL,
+nextOfKin_postCode VARCHAR(10) NULL,
+nextOfKin_country VARCHAR(25) NOT NULL,
+nextOfKin_phone VARCHAR(25) NOT NULL,
+nextOfKin_email VARCHAR(45) NOT NULL,
+houseHold_id INT (10) UNSIGNED NOT NULL,
+houseHold_role VARCHAR(45) NOT NULL,
+census_id VARCHAR(45) NULL
+);
+
+
+
+INSERT INTO census_table1 (
+id,firstName,middleName,lastName,gender,dateOfBirth,ssn,maritalStatus,numberOfChildren,
+placeOfBirth,religion,stateOfOrigin,address,address_city,
+address_state,address_postCode,address_country,employment_status,employment_profession,
+nextOfKin_name,nextOfKin_address,nextOfKin_city,nextOfKin_state,nextOfKin_postCode,
+nextOfKin_country,nextOfKin_phone,nextOfKin_email,houseHold_id,houseHold_role,census_id) VALUES ('Lawal','Muniruh','Olawale','Male','20190420',1002030405,'Married',4,'Lagos Island',
+'Christian','Ogun','12 Awolowo Way','Ikeja','Lagos',01234,'Nigeria',
+'Employed','Solicitor','Audu','Kolinton','Maryland','Lagos',01234,'Nigeria','+2348093570999','lawal2020@ngcensus.com',23410,'Father',
+ '20-042019123')

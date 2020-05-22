@@ -1,0 +1,24 @@
+{
+  "name": "Desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexDB.js",
+  "scripts": {
+    "start": "indexDB.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahim2402/Project-Course2-FoodieLine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahim2402/Project-Course2-FoodieLine/issues"
+  },
+  "homepage": "https://github.com/ibrahim2402/Project-Course2-FoodieLine#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6"
+  }
+}

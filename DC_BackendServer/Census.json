@@ -1,0 +1,56 @@
+
+//collection of census_db structure
+db.census_table.insert({
+
+	"firstName": "Ola", 
+	"middleName": "Aje", 
+	"lastName": "Ibra", 
+	"gender": "Male",
+	"ssn": "10203040501",
+	"maritalStatus": "Married",
+	"numberOfChildren": 4,
+	"placeOfBirth": "Lagos", 
+	"religion": "Muslim",
+	"stateOfOrigin": "Ogun state",
+
+	"address":{
+		"street": "Awolowo Way",
+		"city": "Ikeja",
+		"state": "Lagos",
+		"postCode": "",
+		"country": "Nigeria"
+		}, 
+
+	"dateOfBirth": {
+		"year": 2020,
+		"month": 05,
+		"day": 20
+		},
+
+	"employment": {
+		"status": "employed",
+		"profession": "Doctor"
+	 },
+
+	 "nextOfKin": {
+	 	"name": "Tahir Osman",
+	 	"address":{
+		"street": "Awolowo Way",
+		"city": "Ikeja",
+		"state": "Lagos",
+		"postCode": "",
+		"country": "Nigeria"
+		},
+
+		"contactInfo":{
+		"phone": 0760001234,
+		"email": "taosm@outlook.com"
+		}
+	},
+	"houseHold": {
+		"id": 1020,
+		"role": "Father"
+	}
+})
+
+
