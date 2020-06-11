@@ -1,0 +1,51 @@
+     // Persenal info page 1.
+            "id":  auto generated,
+            "firstName": "Lawal",
+            "middleName": "Muniruh",
+            "lastName": "Olawale",
+            "ssn": 1002030405, (it can be auto generated)
+
+            // birt info page 2
+            "gender": Male or Female
+            "dateOfBirth": "20190420",
+            "placeOfBirth": "Lagos Island",
+            "stateOfOrigin": [list of all states in nigeria],
+
+           // merital tstus page 3
+            "maritalStatus": Single, Married, divorced
+            "numberOfChildren": 4,
+            "religion": "Christian, islam, none
+
+
+
+
+        // Address information page 4
+            "address-street": "12 Awolowo Way",
+            "address_postCode": "1234",
+            "address_city": "Ikeja",
+            "address_state": [list of all states in nigeria],
+            "address_country": [list of all countries],
+
+        // employment information 5
+            "employment_status": "Employed, student, not employed,
+            "employment_profession": "Solicitor",
+
+        // close family memebr info. 6
+            "nextOfKin_name": "Audu",
+            "nextOfKin_address": "Kolinton",
+            "nextOfKin_city": "Maryland",
+            "nextOfKin_state": [list of all states in nigeria],
+            "nextOfKin_postCode": "1234",
+            "nextOfKin_country": "Nigeria",
+            "nextOfKin_phone": "+2348093570999",
+            "nextOfKin_email": "lawal2020@ngcensus.com",
+
+
+        // House hold 7
+            "houseHold_id": 23410,
+            "houseHold_role": "Father, mother, sister, brother",
+
+        //  auto generated
+            "census_id": "20-042019123"
+
+// page 8 confirmation and save data to db.

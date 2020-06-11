@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUPFragment"
-    android:orientation="vertical"
     android:background="@drawable/gradiant_bg"
-    >
+    android:orientation="vertical"
+    tools:context=".SignUPFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-         <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -22,8 +21,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
                 android:padding="10dp">
 
                 <TextView
@@ -32,25 +31,26 @@
                     android:layout_height="wrap_content"
                     android:text="@string/register_account"
                     android:textAlignment="center"
-                    android:textSize="26sp"
-                    android:textColor="@android:color/white"/>
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp" />
+
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/enter_your_account_information"
                     android:textAlignment="center"
-                    android:textSize="20sp"
                     android:textColor="@android:color/white"
-                    />
+                    android:textSize="20sp" />
             </LinearLayout>
 
+            <!--  Personal information -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:layout_marginTop="10dp">
+                android:orientation="vertical">
 
                 <EditText
                     android:id="@+id/first_nameText"
@@ -58,8 +58,16 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_first_name"
                     android:importantForAutofill="no"
-                    android:inputType="text"
-                     />
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/middle_nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Middle name"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
 
                 <EditText
                     android:id="@+id/last_nameText"
@@ -67,24 +75,128 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_last_name"
                     android:importantForAutofill="no"
-                    android:inputType="text"
-                    />
-                <EditText
-                    android:id="@+id/birth_yearText"
+                    android:inputType="text" />
+
+                <!-- Date of birth -->
+                <DatePicker
+                    android:id="@+id/dateof_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+                <!-- End of date of birth -->
+
+                <!-- Gender information-->
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/yymmdd"
-                    android:importantForAutofill="no"
-                    android:inputType="date"
-                    />
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Male"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Female"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+                <!-- Meritual status (Single, Married, divorced)-->
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Single"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/married"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Married"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/divorced"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Divorced"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </RadioGroup>
+                <!-- END OF Meritual status -->
+
+                <!-- Religon (Muslim, christian)-->
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Religion"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/muslim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Muslim"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/christian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Christian"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </RadioGroup>
+                <!-- END of Religion -->
+
                 <EditText
                     android:id="@+id/emailText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_email"
                     android:importantForAutofill="no"
-                    android:inputType="textWebEmailAddress"
-                    />
+                    android:inputType="textWebEmailAddress" />
 
                 <EditText
                     android:id="@+id/password_nameText"
@@ -92,8 +204,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_password"
                     android:importantForAutofill="no"
-                    android:inputType="textPassword"
-                    />
+                    android:inputType="textPassword" />
 
                 <EditText
                     android:id="@+id/confirm_nameText"
@@ -101,17 +212,16 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/confirm_password"
                     android:importantForAutofill="no"
-                    android:inputType="textPassword"
-                     />
+                    android:inputType="textPassword" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-               android:layout_marginTop="10dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView3"
@@ -120,53 +230,52 @@
                     android:layout_marginBottom="16dp"
                     android:text="@string/family_member_information"
                     android:textAlignment="center"
-                    android:textSize="20sp"
                     android:textColor="@android:color/white"
-                    />
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/familyM_first_nameText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_first_name"
-                    android:inputType="text"
-                    />
+                    android:inputType="text" />
 
                 <EditText
                     android:id="@+id/familyM_last_nameText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_last_name"
-                    android:inputType="text"
-                     />
+                    android:inputType="text" />
+
                 <EditText
                     android:id="@+id/familyM_poneText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_phone_number"
-                    android:inputType="phone"
-                    />
+                    android:inputType="phone" />
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp">
-                <Button
-                    android:id="@+id/registerAcount_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/register_account"
-                    android:background="@drawable/gradiant_bg"
-                    android:textColor="@android:color/white"
-                    android:textAllCaps="false"
-                    android:textSize="25sp"
-                     />
-
-            </LinearLayout>
-         </LinearLayout>
+        </LinearLayout>
     </ScrollView>
+
+    <!-- Register butun -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/registerAcount_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/gradiant_bg"
+            android:text="@string/register_account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

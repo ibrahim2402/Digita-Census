@@ -86,7 +86,7 @@ public class SignUPFragment extends Fragment {
         email = view.findViewById(R.id.emailText);
         passord= view.findViewById(R.id.password_nameText);
         confirm_password = view.findViewById(R.id.confirm_nameText);
-        yearOfbirth = view.findViewById(R.id.birth_yearText);
+        //yearOfbirth = view.findViewById(R.id.birth_yearText);
 
         family_member_fname = view.findViewById(R.id.familyM_first_nameText);
         family_member_lname = view.findViewById(R.id.familyM_last_nameText);
