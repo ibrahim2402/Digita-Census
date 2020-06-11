@@ -2,10 +2,10 @@
     <string name="app_name">RetrofitAPP</string>
 
     <string name="register_account">Register Account</string>
-    <string name="enter_last_name">Enter last Name</string>
+    <string name="enter_last_name">Last Name</string>
     <string name="yymmdd">YYMMDD</string>
-    <string name="enter_first_name">Enter first name</string>
-    <string name="enter_email">Enter email</string>
+    <string name="enter_first_name">First Name</string>
+    <string name="enter_email">Email</string>
     <string name="enter_your_account_information">Enter Your Account Information</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
